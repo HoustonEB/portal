@@ -1,6 +1,9 @@
-const Vue  = require('vue');
+import Vue from 'vue';
+import router from './router';
+import App from './App.vue';
 
-const vue = new Vue({
+const app = new Vue({
     el: '#app',
-    data: []
+    router,
+    render: h => h(App)
 });
