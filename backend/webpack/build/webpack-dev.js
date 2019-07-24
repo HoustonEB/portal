@@ -11,21 +11,20 @@ module.exports = merge(common, {
         path: path.resolve(__dirname, '../../../dist/dev/')
     },
     devServer: {
-        contentBase: path.join(__dirname, '../../../dist'),
+        contentBase: path.resolve(__dirname, '../../../dist/dev/'),
         compress: true,
-        // host: '127.0.0.1',
         host: '127.0.0.1',
-        port: 6666,
+        port: 8888,
         // hot: true,
-        // openPage: './dist/page/main.html'
-        open: 'Chrome'
+        openPage: 'page/dev-page.html',
+        open: true
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({
             title: 'My App',
-            filename: 'page/dev-main.html',
-            template: 'backEnd/webpack/templates/dev-page.html'
+            filename: 'page/dev-page.html',
+            template: 'backend/webpack/templates/dev-page.html'
         })
     ]
 });

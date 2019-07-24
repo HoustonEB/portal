@@ -12,8 +12,8 @@ module.exports = merge(common, {
     plugins: [
         new HtmlWebpackPlugin({
             title: 'My App',
-            filename: 'page/prod-main.html',
-            template: 'backEnd/webpack/templates/dev-page.html'
+            filename: 'page/prod-page.html',
+            template: 'backend/webpack/templates/dev-page.html'
         })
     ]
 });

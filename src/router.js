@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Home from './Home/home.vue';
+import Home from './Home/Home.vue';
 
 Vue.use(VueRouter);
 
@@ -10,7 +10,7 @@ const routes = [
         component: Home
     }
 ];
-console.log(VueRouter, '23')
+
 const router = new VueRouter({
     routes
 });
