@@ -1,10 +1,12 @@
 <template>
-    <div>=====dd111222
-        <h1>sd都是点s</h1>
+    <div>
+        {{'Header'}}
     </div>
 </template>
 <script>
+export default {
 
+}
 </script>
 <style>
 

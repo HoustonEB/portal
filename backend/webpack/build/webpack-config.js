@@ -4,7 +4,7 @@ const webpack = require('webpack');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-    entry: path.resolve(__dirname, '../../../src/index.js'),
+    entry: path.resolve(__dirname, '../../../frontend/src/index.js'),
     module: {
         rules: [
             {
