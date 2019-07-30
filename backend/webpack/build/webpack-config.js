@@ -5,6 +5,11 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     entry: path.resolve(__dirname, '../../../frontend/src/index.js'),
+    resolve: {
+        alias: {
+            '@frontend': path.resolve(__dirname, '../../../frontend/')
+        }
+    },
     module: {
         rules: [
             {
@@ -35,7 +40,7 @@ module.exports = {
                     loader: 'file-loader',
                     options: {
                         outputPath: 'images/',
-                        // publicPath: '../images/',
+                        publicPath: '../images/',
                     }
                 }
             },

@@ -34,14 +34,17 @@
     }
 </script>
 <style lang="less" type="text/less" scoped>
-    @import url('../../../global/style/global.less');
+    @import (reference) '~@frontend/global/style/global.less';
 
     .blog-header-wrapper {
+        width: 100%;
         display: flex;
         height: 50px;
         line-height: 50px;
         border-bottom: 1px solid #eee;
         padding: 0 100px;
+        z-index: 12;
+        background-color: #fff;
         .blog-logo-wrapper {
             flex: 1;
             font-family: 'Lobster', cursive;
@@ -61,12 +64,11 @@
                     font-size: 12px;
                     letter-spacing: 3px;
                     font-weight: 300;
+                    transition: all .5s;
                     color: @gray-22;
-                    span {
-                        &:hover {
-                            color: #E7746F;
-                            cursor: pointer;
-                        }
+                    &:hover {
+                        color: #E7746F;
+                        cursor: pointer;
                     }
                 }
             }

@@ -12,5 +12,5 @@
 
 </script>
 <style type="text/less" lang="less">
-@import url('../global/style/global.less');
+@import (once) '~@frontend/global/style/global.less';
 </style>
