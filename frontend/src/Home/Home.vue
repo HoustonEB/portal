@@ -84,7 +84,7 @@
                 this.headerOffsetTop = this.header.offsetTop;
                 if (body.scrollTop >= this.headerOffsetTop) {
                     header.style = 'position: fixed; top: 0px';
-                    this.header.style = 'height: 51px;';
+                    this.header.style = 'height: 50px;';
                 } else {
                     header.style = '';
                     this.header.style = '';
