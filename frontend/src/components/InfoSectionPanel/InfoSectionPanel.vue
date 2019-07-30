@@ -5,7 +5,7 @@
             <p class="line"></p>
             <p class="description">{{content}}</p>
         </div>
-        <div class="content-section"></div>
+        <slot name="contentCard"></slot>
     </div>
 </template>
 <script>
@@ -19,7 +19,7 @@ export default {
 <style type="text/less" lang="less">
     @import (reference) '~@frontend/global/style/global.less';
     .info-section-panel {
-        padding: 120px 0 100px 0;
+        padding: 100px 0 100px 0;
         background-color: #f5f5f5;
         .text-info-box {
             width: 555px;
@@ -42,9 +42,6 @@ export default {
             line-height: 32px;
             font-size: 18px;
             font-weight: 300;
-        }
-        .content-section {
-
         }
     }
 </style>
