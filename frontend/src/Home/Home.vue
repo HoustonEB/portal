@@ -470,33 +470,28 @@
                     .content-text-box {
                         position: relative;
                         height: 150px;
-                        &:before {
+                        .common-pseudo-style {
                             content: '';
                             position: absolute;
                             display: block;
-                            width: 100%;
-                            height: 100%;
                             opacity: 0;
                             top: 0;
                             left: 0;
-                            border-top: 1px solid #fff;
-                            border-bottom: 1px solid #fff;
-                            transform: scale(0, 1);
+                            right: 0;
+                            bottom: 0;
                             transition: all .5s;
                         }
+                        &:before {
+                            .common-pseudo-style;
+                            transform: scale(0, 1);
+                            border-top: 1px solid #fff;
+                            border-bottom: 1px solid #fff;
+                        }
                         &:after {
-                            content: '';
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            display: block;
-                            width: 100%;
-                            height: 100%;
-                            opacity: 0;
+                            .common-pseudo-style;
+                            transform: scale(1, 0);
                             border-left: 1px solid #fff;
                             border-right: 1px solid #fff;
-                            transform: scale(1, 0);
-                            transition: all .5s;
                         }
                         .text-title {
                             font-size: 20px;
