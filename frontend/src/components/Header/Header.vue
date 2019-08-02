@@ -3,7 +3,7 @@
         class="blog-header-wrapper">
         <div
             class="blog-logo-wrapper">
-            <span>john</span>
+            <span>YU ZHUANG</span>
         </div>
         <div
             class="blog-menu-wrapper">

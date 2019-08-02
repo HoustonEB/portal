@@ -35,6 +35,42 @@ html {
 ul {
   list-style: none;
 }
+a {
+  text-decoration: none;
+}
+@gray-11: #111;
 @gray-22: #222;
-@gray-22: #333;
+@gray-33: #333;
 @gray-66: #666;
+
+.clear-fix {
+  clear: both;
+}
+
+.clearfix{/*伪元素是行内元素 正常浏览器清除浮动方法*/
+  *zoom: 1;/*ie6清除浮动的方式 *号只有IE6-IE7执行，其他浏览器不执行*/
+  &:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear:both;
+    visibility: hidden;
+  }
+}
+
+.arrow(@deg: 45deg, @lineHeight) {
+  text-align: center;
+  line-height: @lineHeight;
+  &:before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    width: 5px;
+    height: 5px;
+    border: 2px solid transparent;
+    border-left-color: #fff;
+    border-top-color: #fff;
+    transform: rotate(@deg);
+  }
+}

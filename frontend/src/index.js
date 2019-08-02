@@ -3,6 +3,7 @@ import router from './router';
 import App from './App.vue';
 // import 'normalize.css';
 import smoothscroll from 'smoothscroll-polyfill';
+import 'animate.css';
 
 // kick off the polyfill!
 smoothscroll.polyfill();

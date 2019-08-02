@@ -38,6 +38,7 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
+    "animate.css": "^3.7.2",
     "loadsh": "0.0.4",
     "normalize.css": "^8.0.1",
     "scrollreveal": "^4.0.5",
