@@ -17,7 +17,15 @@ module.exports = merge(common, {
         port: 8888,
         // hot: true,
         openPage: 'page/dev-page.html',
-        open: true
+        open: true,
+        index: '',
+        proxy: [{
+            context: ['/users'],
+            //  target: 'http://localhost:3000', error
+            target: 'http://127.0.0.1:3000',
+            // secure: false, https enable
+            // changeOrigin: true
+        }]
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
