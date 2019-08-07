@@ -19,13 +19,13 @@ module.exports = merge(common, {
         openPage: 'page/dev-page.html',
         open: true,
         index: '',
-        proxy: [{
-            context: ['/users'],
-            //  target: 'http://localhost:3000', error
-            target: 'http://127.0.0.1:3000',
-            // secure: false, https enable
-            // changeOrigin: true
-        }]
+        // proxy: [{
+        //     context: ['/users'],
+        //     //  target: 'http://localhost:3000', error
+        //     target: 'http://127.0.0.1:3000',
+        //     // secure: false, https enable
+        //     // changeOrigin: true
+        // }]
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),

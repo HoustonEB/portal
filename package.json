@@ -41,6 +41,7 @@
   "dependencies": {
     "animate.css": "^3.7.2",
     "axios": "^0.19.0",
+    "element-ui": "^2.11.1",
     "loadsh": "0.0.4",
     "normalize.css": "^8.0.1",
     "scrollreveal": "^4.0.5",
